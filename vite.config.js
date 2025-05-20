@@ -1,7 +1,16 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+export default {
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'vendor': ['react', 'react-dom'], // ຖ້າໃຊ້ React
+          // ຫຼື ສຳລັບ Vue:
+          // 'vendor': ['vue', 'vue-router'],
 
-// https://vite.dev/config/
-export default defineConfig({
-  plugins: [react()],
-})
+          // ສາມາດເພີ່ມ dependencies ອື່ນໆທີ່ໃຫຍ່ໄດ້
+          // 'ui': ['material-ui', '@mui/material']
+        }
+      }
+    }
+  }
+}

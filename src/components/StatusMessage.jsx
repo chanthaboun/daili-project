@@ -1,4 +1,5 @@
 // src/components/StatusMessage.jsx
+import React from "react";
 import { Snackbar, Alert } from "@mui/material";
 import { useSchedule } from "../contexts/ScheduleContext";
 

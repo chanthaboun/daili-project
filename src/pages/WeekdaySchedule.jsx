@@ -1,4 +1,5 @@
 // src/pages/WeekdaySchedule.jsx
+import React from "react";
 import { Container } from "@mui/material";
 import ScheduleTable from "../components/ScheduleTable";
 
